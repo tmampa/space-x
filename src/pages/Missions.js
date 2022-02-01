@@ -1,9 +1,10 @@
 import React from 'react';
+import MissionsTable from '../components/missionsComponents/MissionsTable';
 
 const Missions = () => {
   return (
     <div>
-      <h1>Missions Under construction</h1>
+      <MissionsTable />
     </div>
   );
 };

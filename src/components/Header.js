@@ -22,7 +22,7 @@ const Header = () => {
   ];
   return (
   <header>
-    <img src={planet} alt='logo' />
+    <img src={planet} alt='logo' style={{width: "2rem", height: "2rem"}}/>
     <nav>
       {links.map((link) => (
         <NavLink
