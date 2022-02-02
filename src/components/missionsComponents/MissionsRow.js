@@ -6,12 +6,20 @@ const MissionsRow = (props) => {
   const { mission_id, mission_name, mission_description, mission_reserved } = props;
 
   return (
-    <div>
-      <div>Mission ID: {mission_id} </div>
-      <div>Mission Name: {mission_name} </div>
-      <div>Mission Description: {mission_description} </div>
-      <div>Mission Reserved: {mission_reserved ? 'reserved' : 'not reserved'} </div>
-    </div>
+    <tr key={mission_id}>
+      <th>{mission_name} </th>
+      <td>{mission_description} </td>
+      <td>
+        <p className={mission_reserved ? "badge active-badge" : "badge"}>
+          {mission_reserved ? 'Active Member' : 'Not a member'}
+        </p>
+      </td>
+      <td>
+        <p className={mission_reserved ? "leave-btn" : "join-btn"}>
+          {mission_reserved ? 'Leave Mission' : 'Join Mission'}
+        </p>
+      </td>
+    </tr >
   );
 };
 
