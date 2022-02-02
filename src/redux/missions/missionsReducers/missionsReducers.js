@@ -7,6 +7,7 @@ const missionsReducer = (state = initialMissionsState, action) => {
     case MissionsActions.LIST_MISSIONS: {
       return [...action.payload];
     }
+
     case MissionsActions.SET_MISSION_RESERVATION: {
       const updatedState = state.map((mission) => {
         if (mission.missionId !== action.payload.id) { return mission; }
@@ -15,6 +16,7 @@ const missionsReducer = (state = initialMissionsState, action) => {
       });
       return [...updatedState];
     }
+
     default:
       return state;
   }

@@ -7,7 +7,7 @@ const InteractiveButton = (props) => {
     label,
     fs,
     bgCol,
-    lableCol,
+    labelCol,
     borderCol,
     padding,
     radius,
@@ -19,7 +19,7 @@ const InteractiveButton = (props) => {
     textAlign: 'center',
     whiteSpace: 'nowrap',
     padding,
-    color: lableCol,
+    color: labelCol,
     backgroundColor: bgCol,
     border: `1px solid ${borderCol}`,
     borderRadius: radius,
@@ -42,7 +42,7 @@ InteractiveButton.propTypes = {
   fs: PropTypes.string,
   padding: PropTypes.string,
   bgCol: PropTypes.string,
-  lableCol: PropTypes.string,
+  labelCol: PropTypes.string,
   borderCol: PropTypes.string,
   radius: PropTypes.string,
 };
@@ -50,9 +50,9 @@ InteractiveButton.propTypes = {
 InteractiveButton.defaultProps = {
   fs: '1.175rem',
   padding: '0.35rem',
-  lableCol: 'hsl(0deg 0% 40%)',
-  bgCol: 'transparent',
+  labelCol: 'hsl(0deg 0% 40%)',
   borderCol: 'hsl(0deg 0% 40%)',
+  bgCol: 'transparent',
   radius: '0.25rem',
 };
 
