@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const InteractiveButton = (props) => {
   const {
+    handleClick,
     label,
     fs,
     bgCol,
@@ -25,15 +26,18 @@ const InteractiveButton = (props) => {
   };
 
   return (
-    <div>
-      <p style={buttonGeneralStyle}>
-        {label}
-      </p>
-    </div>
+    <button
+      type="button"
+      onClick={handleClick}
+      style={buttonGeneralStyle}
+    >
+      {label}
+    </button>
   );
 };
 
 InteractiveButton.propTypes = {
+  handleClick: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   fs: PropTypes.string,
   padding: PropTypes.string,

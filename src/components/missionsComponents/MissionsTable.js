@@ -27,11 +27,11 @@ const MissionsTable = () => {
         {
           missionsList.map((mission) => (
             <MissionsRow
-              key={mission.mission_id}
-              missionId={mission.mission_id}
-              missionName={mission.mission_name}
-              missionDescription={mission.mission_description}
-              missionReserved={mission.mission_reserved}
+              key={mission.missionId}
+              missionId={mission.missionId}
+              missionName={mission.missionName}
+              missionDescription={mission.missionDescription}
+              missionReserved={mission.missionReserved}
             />
           ))
         }

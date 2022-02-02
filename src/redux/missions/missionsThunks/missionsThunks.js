@@ -6,10 +6,10 @@ const fetchMissions = () => async (dispatch) => {
     const apiMissions = await apiMissionsResponse.json();
     dispatch(listMissions(
       apiMissions.map((mission) => ({
-        mission_id: mission.mission_id,
-        mission_name: mission.mission_name,
-        mission_description: mission.description,
-        mission_reserved: false,
+        missionId: mission.mission_id,
+        missionName: mission.mission_name,
+        missionDescription: mission.description,
+        missionReserved: false,
       })),
     ));
   } catch (error) {
