@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import { missionsReducer } from './missions/missionsReducers/missionsReducers';
+import missionsReducer from './missions/missionsReducers/missionsReducers';
 
 const reducer = combineReducers({
   missionsReducer,

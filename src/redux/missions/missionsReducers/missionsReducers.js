@@ -1,8 +1,8 @@
-import * as MissionsActions from "../missionsActions/missionsActions";
+import * as MissionsActions from '../missionsActions/missionsActions';
 
 const initialMissionsState = [];
 
-export const missionsReducer = (state = initialMissionsState, action) => {
+const missionsReducer = (state = initialMissionsState, action) => {
   switch (action.type) {
     case MissionsActions.LIST_MISSIONS:
       return [...action.payload];
@@ -11,3 +11,4 @@ export const missionsReducer = (state = initialMissionsState, action) => {
   }
 };
 
+export default missionsReducer;

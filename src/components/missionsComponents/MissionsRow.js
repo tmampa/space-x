@@ -1,33 +1,38 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const MissionsRow = (props) => {
-  const { mission_id, mission_name, mission_description, mission_reserved } = props;
+  const {
+    missionId, missionName, missionDescription, missionReserved,
+  } = props;
 
   return (
-    <tr key={mission_id}>
-      <th>{mission_name} </th>
-      <td>{mission_description} </td>
+    <tr key={missionId}>
+      <th>
+        {missionName}
+      </th>
       <td>
-        <p className={mission_reserved ? "badge active-badge" : "badge"}>
-          {mission_reserved ? 'Active Member' : 'Not a member'}
+        {missionDescription}
+      </td>
+      <td>
+        <p className={missionReserved ? 'badge active-badge' : 'badge'}>
+          {missionReserved ? 'Active Member' : 'Not a member'}
         </p>
       </td>
       <td>
-        <p className={mission_reserved ? "leave-btn" : "join-btn"}>
-          {mission_reserved ? 'Leave Mission' : 'Join Mission'}
+        <p className={missionReserved ? 'leave-btn' : 'join-btn'}>
+          {missionReserved ? 'Leave Mission' : 'Join Mission'}
         </p>
       </td>
-    </tr >
+    </tr>
   );
 };
 
 MissionsRow.propTypes = {
-  mission_id: PropTypes.string.isRequired,
-  mission_name: PropTypes.string.isRequired,
-  mission_description: PropTypes.string.isRequired,
-  mission_reserved: PropTypes.bool.isRequired,
+  missionId: PropTypes.string.isRequired,
+  missionName: PropTypes.string.isRequired,
+  missionDescription: PropTypes.string.isRequired,
+  missionReserved: PropTypes.bool.isRequired,
 };
 
 export default MissionsRow;

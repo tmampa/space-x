@@ -1,4 +1,4 @@
-import { listMissions } from "../missionsActions/missionsActions";
+import { listMissions } from '../missionsActions/missionsActions';
 
 const fetchMissions = () => async (dispatch) => {
   try {
@@ -18,4 +18,3 @@ const fetchMissions = () => async (dispatch) => {
 };
 
 export default fetchMissions;
-

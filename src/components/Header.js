@@ -21,19 +21,19 @@ const Header = () => {
     },
   ];
   return (
-  <header>
-    <img src={planet} alt='logo' style={{width: "2rem", height: "2rem"}}/>
-    <nav>
-      {links.map((link) => (
-        <NavLink
-          key={link.id}
-          to={link.path}
-        >
-        {link.text}
-        </NavLink>
-      ))}
+    <header>
+      <img src={planet} alt="logo" style={{ width: '2rem', height: '2rem' }} />
+      <nav>
+        {links.map((link) => (
+          <NavLink
+            key={link.id}
+            to={link.path}
+          >
+            {link.text}
+          </NavLink>
+        ))}
       </nav>
-  </header>
+    </header>
   );
 };
 

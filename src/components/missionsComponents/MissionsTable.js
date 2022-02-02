@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import fetchMissions from "../../redux/missions/missionsThunks/missionsThunks";
-import MissionsRow from "./MissionsRow";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import fetchMissions from '../../redux/missions/missionsThunks/missionsThunks';
+import MissionsRow from './MissionsRow';
 
 const MissionsTable = () => {
   const dispatch = useDispatch();
@@ -20,15 +20,18 @@ const MissionsTable = () => {
           <th>Mission</th>
           <th>Description</th>
           <th>Status</th>
-          <th> {" "} </th>
+          <th>
+            {' '}
+          </th>
         </tr>
         {
           missionsList.map((mission) => (
             <MissionsRow
-              mission_id={mission.mission_id}
-              mission_name={mission.mission_name}
-              mission_description={mission.mission_description}
-              mission_reserved={mission.mission_reserved}
+              key={mission.mission_id}
+              missionId={mission.mission_id}
+              missionName={mission.mission_name}
+              missionDescription={mission.mission_description}
+              missionReserved={mission.mission_reserved}
             />
           ))
         }
