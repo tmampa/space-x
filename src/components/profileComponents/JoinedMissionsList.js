@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './joinedMissionsList.css';
 
 const JoinedMissionsList = (props) => {
   const { joinedMissions } = props;
@@ -7,7 +8,7 @@ const JoinedMissionsList = (props) => {
   return (
     <figure>
       <figcaption>My Missions</figcaption>
-      <ul>
+      <ul className="active-list">
         {
           joinedMissions.map((mission) => (
             <li key={mission.id}>{mission.missionName}</li>
