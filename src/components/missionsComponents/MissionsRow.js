@@ -33,7 +33,7 @@ const MissionsRow = (props) => {
         <InteractiveButton
           handleClick={handleReservation}
           label={missionReserved ? 'Leave Mission' : 'Join Mission'}
-          lableCol={missionReserved ? 'hsl(0deg 65% 45%)' : 'hsl(0deg 0% 40%)'}
+          labelCol={missionReserved ? 'hsl(0deg 65% 45%)' : 'hsl(0deg 0% 40%)'}
           borderCol={missionReserved ? 'hsl(0deg 65% 45%)' : 'hsl(0deg 0% 40%)'}
         />
       </td>
