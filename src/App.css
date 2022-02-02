@@ -1,3 +1,16 @@
 .active {
   text-decoration: underline;
 }
+
+.missions-page-container,
+.profile-page-container {
+  width: 85%;
+  margin: 3rem auto;
+  color: hsl(0deg 0% 30%);
+}
+
+.profile-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
