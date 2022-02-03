@@ -22,7 +22,10 @@ const Header = () => {
   ];
   return (
     <header>
-      <img src={planet} alt="logo" style={{ width: '2rem', height: '2rem' }} />
+      <div className="logo">
+        <img src={planet} alt="logo" style={{ width: '4.5rem', height: '4.5rem' }} />
+        <h1>Space Travelers&apos; Hub</h1>
+      </div>
       <nav>
         {links.map((link) => (
           <NavLink
