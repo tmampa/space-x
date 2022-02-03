@@ -7,7 +7,7 @@ Space-Travelers-Hub is a web application displaying real live data from the Spac
 
 ## Screenshots
 ### Desktop
-![screenshot](src\img\missions.jpg)
+![screenshot](./src/img/missions.jpg)
 ## Built With
 
 - HTML, CSS
