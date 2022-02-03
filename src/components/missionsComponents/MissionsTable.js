@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import fetchMissions from '../../redux/missions/missionsThunks/missionsThunks';
 import MissionsRow from './MissionsRow';
+import './missionsTable.css';
 
 const MissionsTable = () => {
   const dispatch = useDispatch();

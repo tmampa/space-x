@@ -1,0 +1,27 @@
+figcaption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active-list {
+  padding-top: 0.5rem;
+}
+
+.active-list li {
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border: 1px solid hsl(0deg 0% 85%);
+  border-top: none;
+}
+
+.active-list li:first-child {
+  border: 1px solid hsl(0deg 0% 85%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.active-list li:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
