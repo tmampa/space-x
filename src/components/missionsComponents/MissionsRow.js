@@ -1,10 +1,19 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { setMissionReservation } from '../../redux/missions/missionsActions/missionsActions';
+import StatusBadge from '../StatusBadge';
+import InteractiveButton from '../InteractionButton';
 
 const MissionsRow = (props) => {
   const {
     missionId, missionName, missionDescription, missionReserved,
   } = props;
+  const dispatch = useDispatch();
+
+  const handleReservation = () => {
+    dispatch(setMissionReservation({ id: missionId }));
+  };
 
   return (
     <tr key={missionId}>
@@ -15,14 +24,18 @@ const MissionsRow = (props) => {
         {missionDescription}
       </td>
       <td>
-        <p className={missionReserved ? 'badge active-badge' : 'badge'}>
-          {missionReserved ? 'Active Member' : 'Not a member'}
-        </p>
+        <StatusBadge
+          active={missionReserved}
+          label={missionReserved ? 'Active Member' : 'Not a member'}
+        />
       </td>
       <td>
-        <p className={missionReserved ? 'leave-btn' : 'join-btn'}>
-          {missionReserved ? 'Leave Mission' : 'Join Mission'}
-        </p>
+        <InteractiveButton
+          handleClick={handleReservation}
+          label={missionReserved ? 'Leave Mission' : 'Join Mission'}
+          labelCol={missionReserved ? 'hsl(0deg 65% 45%)' : 'hsl(0deg 0% 40%)'}
+          borderCol={missionReserved ? 'hsl(0deg 65% 45%)' : 'hsl(0deg 0% 40%)'}
+        />
       </td>
     </tr>
   );
