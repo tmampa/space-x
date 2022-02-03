@@ -2,14 +2,46 @@
   text-decoration: underline;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5% 1.5rem;
+  margin: 0 3.5%;
+  border-bottom: 2px solid hsl(0deg 0% 85%);
+}
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: hsl(230deg 90% 60%);
+  padding: 0 1rem;
+}
+
+nav > a:last-child {
+  border-left: 1px solid hsl(0deg 0% 30%);
+  padding-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .missions-page-container,
 .profile-page-container {
-  width: 85%;
+  width: 87%;
   margin: 3rem auto;
   color: hsl(0deg 0% 30%);
 }
 
 .profile-page-container {
+  width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
