@@ -2,7 +2,7 @@ import React from 'react';
 import RocketsList from '../components/rocketsComponents/RocketsList';
 
 const Rockets = () => (
-  <div>
+  <div className="rockets-page-container">
     <RocketsList />
   </div>
 );
