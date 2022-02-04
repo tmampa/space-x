@@ -37,17 +37,15 @@ const StatusBadge = (props) => {
   };
 
   return (
-    <div>
-      <p
-        style={
-          active
-            ? { ...badgeGeneralStyle, ...badgeActiveStyle }
-            : { ...badgeGeneralStyle, ...badgeInactiveStyle }
-        }
-      >
-        {label}
-      </p>
-    </div>
+    <p
+      style={
+				active
+				  ? { ...badgeGeneralStyle, ...badgeActiveStyle }
+				  : { ...badgeGeneralStyle, ...badgeInactiveStyle }
+			}
+    >
+      {label}
+    </p>
   );
 };
 

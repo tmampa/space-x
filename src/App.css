@@ -46,3 +46,16 @@ nav > a:last-child {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }
+
+.rockets-page-container,
+.missions-page-container,
+.profile-page-container {
+  width: 87%;
+  margin: 3rem auto;
+  color: hsl(0deg 0% 30%);
+}
+
+.rocket-desc-wrapper > * {
+  display: inline;
+  margin-right: 1rem;
+}
