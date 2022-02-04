@@ -1,9 +1,5 @@
 # Space-Travelers-Hub
 Space-Travelers-Hub is a web application displaying real live data from the SpaceX API. Allows users to book rockets and join selected space missions.
-  
-## Live Demo
-
-[Live Demo Link](https://tmampa.github.io/space-x/) --- update link!!!
 
 ## Screenshots
 ### Desktop
