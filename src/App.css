@@ -55,13 +55,6 @@ nav > a:last-child {
   color: hsl(0deg 0% 30%);
 }
 
-.profile-page-container {
-  width: 85%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
 .rocket-desc-wrapper > * {
   display: inline;
   margin-right: 1rem;
