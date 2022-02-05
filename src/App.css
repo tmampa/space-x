@@ -33,13 +33,6 @@ nav > a:last-child {
   gap: 2rem;
 }
 
-.missions-page-container,
-.profile-page-container {
-  width: 87%;
-  margin: 3rem auto;
-  color: hsl(0deg 0% 30%);
-}
-
 .rockets-page-container,
 .missions-page-container,
 .profile-page-container {
