@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Links Tests renders correctly 1`] = `
+<div
+  className="profile-page-container"
+>
+  <figure>
+    <figcaption>
+      My Missions
+    </figcaption>
+    <ul
+      className="active-list"
+    />
+  </figure>
+  <figure>
+    <figcaption>
+      My Rockets
+    </figcaption>
+    <ul
+      className="active-list"
+    />
+  </figure>
+</div>
+`;
