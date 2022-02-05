@@ -3,13 +3,13 @@ import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../../src/redux/configureStore'
-import RocketItem from '../../src/components/rocketsComponents/RocketItem';
+import RocketsList from '../../src/components/rocketsComponents/RocketsList';
 
 describe('Rocket Element Tests', () => {
   test('Rocket Element renders correctly', () => {
     render(
       <Provider store={store}>
-        <RocketItem />
+        <RocketsList />
       </Provider>
     );
     expect(screen.queryByText(/Missions/)).toBeNull();
@@ -19,7 +19,7 @@ describe('Rocket Element Tests', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <RocketItem />
+          <RocketsList />
         </Provider>
       )
       .toJSON();
